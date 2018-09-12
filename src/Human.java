@@ -1,6 +1,11 @@
 public class Human extends Object {
-    public String firstName;
-    public String lastName;
+    protected String firstName;
+    protected String lastName;
+
+    public Human(String _firstName, String _lastName){
+        firstName = _firstName;
+        lastName = _lastName;
+    }
 
     public String getFullName() {
         return firstName + " " + lastName;

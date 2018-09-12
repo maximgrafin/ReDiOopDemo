@@ -1,21 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        Human me = new Human();
-        me.firstName = "Maksim";
-        me.lastName = "Sadym";
+        Human me = new Human("Maksim", "Sadym");
 
-        Human meToo = new Human();
-        meToo.firstName = "Maksim";
-        meToo.lastName = "Sadym";
+        Human meToo = new Human("Maksim", "Sadym");
 
-        Human myFriend = new Human();
-        myFriend.firstName = "Sadik";
-        myFriend.lastName = "Hasanovic";
+        Human myFriend = new Human("Sadik", "Hasanovic");
 
-        Doctor myDoctor = new Doctor();
-        myDoctor.firstName = "Gregory";
-        myDoctor.lastName = "House";
+        Doctor myDoctor = new Doctor("Gregory", "House");
 
         myDoctor.addPatient(me);
         myDoctor.addPatient(meToo);

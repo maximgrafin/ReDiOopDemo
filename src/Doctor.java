@@ -2,9 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Doctor extends Human {
-    public String speciality;
-
     public List<Human> patients = new ArrayList<Human>();
+
+    public Doctor(String firstName, String lastName) {
+        super(firstName, lastName);
+    }
 
     @Override
     public String getFullName() {
