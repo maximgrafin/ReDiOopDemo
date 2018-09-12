@@ -18,7 +18,7 @@ public class Doctor extends Human {
 
     public void addPatient(Human patient) {
         for (Human another_patient : patients) {
-            if (another_patient.equals(patient) ) {
+            if (another_patient.equals(patient)) {
                 System.out.println("The patient " + patient + " is already registerd");
                 return;
             }
