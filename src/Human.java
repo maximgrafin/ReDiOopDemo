@@ -1,4 +1,4 @@
-public class Human extends Object {
+public class Human implements IHaveAName {
     protected String firstName;
     protected String lastName;
 

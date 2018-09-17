@@ -1,11 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        Human me = new Human("Maksim", "Sadym");
-
-        Human meToo = new Human("Maksim", "Sadym");
-
-        Human myFriend = new Human("Sadik", "Hasanovic");
+        IHaveAName me = new Human("Maksim", "Sadym");
+        IHaveAName meToo = new Human("Maksim", "Sadym");
+        IHaveAName myFriend = new Human("Sadik", "Hasanovic");
+//        IHaveAName myDog = new Pet("dog", "Jimmy");
 
         Doctor myDoctor = new Doctor("Gregory", "House");
 
@@ -16,7 +15,7 @@ public class Main {
         System.out.println("Doctor: " + myDoctor);
         System.out.println("Patients: ");
 
-        for (Human patient : myDoctor.patients) {
+        for (IHaveAName patient : myDoctor.patients) {
             System.out.println(patient);
         }
     }
